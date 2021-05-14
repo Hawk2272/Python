@@ -52,7 +52,8 @@ while True:
         sleep.iconbitmap(r'C:\Users\user\Downloads\alarm.ico')
         sleep.geometry("400x200")
         print("hello")
-        print("Gaurav is the best")
+        print("Chawla is the best")
+        
         
         
         
