@@ -9,7 +9,7 @@ def answer():
     answer_1.geometry("400x200")
     time_format=Label(answer_1, text= "Enter time in 24 hour format!", fg="cyan",bg="black",font="Calibri").place(x=60,y=120)
     answer_1.after(30000,lambda:answer_1.destroy())
-    answer_1= Button(answer_1,text = "Next page",fg="red",width = 15,command=answer2).place(x =135,y=60)
+    answer_1= Button(answer_1,text = "Next page",fg="red",width = 15,command= answer2).place(x =135,y=60)
     answer_1.mainloop()
 
 question=Tk()
