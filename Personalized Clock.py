@@ -47,4 +47,6 @@ while True:
         secTime = Entry(clock,textvariable = sec,bg = "pink",width = 15).place(x=220,y=30)
         submit = Button(clock,text = "Set Alarm",fg="red",width = 10,command = actual_time).place(x =135,y=60)
         clock.mainloop()
+    if i==2:
+        sleep=Tk()
     #Execution of the window.
