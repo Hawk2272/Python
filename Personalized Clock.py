@@ -51,8 +51,4 @@ while True:
         sleep=Tk()
         sleep.iconbitmap(r'C:\Users\user\Downloads\alarm.ico')
         sleep.geometry("400x200")
-        print()
-        print("Hi world")
-        print("Gaurav Chawla")
-        print()
-        
+    
