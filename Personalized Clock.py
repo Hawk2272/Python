@@ -48,4 +48,5 @@ while True:
         submit = Button(clock,text = "Set Alarm",fg="red",width = 10,command = actual_time).place(x =135,y=60)
         clock.mainloop()
     if i==2:
-        print("Hello world")
+        sleep=Tk()
+        sleep.iconbitmap(r'C:\Users\user\Downloads\alarm.ico')
