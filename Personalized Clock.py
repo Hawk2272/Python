@@ -50,3 +50,4 @@ while True:
     if i==2:
         sleep=Tk()
         sleep.iconbitmap(r'C:\Users\user\Downloads\alarm.ico')
+        sleep.geometry()
