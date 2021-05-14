@@ -50,5 +50,5 @@ while True:
         #Execution of the window.
     if i==2:
         sleep=Tk()
+        sleep.iconbitmap(r'C:\Users\user\Downloads\Snore-01-512.ico')
         sleep.title("Sleep Suggestions")
-    
