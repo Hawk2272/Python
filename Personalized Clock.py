@@ -53,7 +53,4 @@ while True:
         sleep.geometry("400x200")
         print("hello")
         print("Chawla is the best")
-        
-        
-        
-        
+        class IntVar
