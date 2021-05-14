@@ -106,4 +106,5 @@ while True:
         submit = Button(sleep,text = "Check suggestions",fg="red",width = 20,command = actual_time1).place(x =120,y=80)
         sleep.mainloop()
     elif i==3:
+        print("Thank you")
         break
