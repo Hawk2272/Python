@@ -50,4 +50,5 @@ while True:
         #Execution of the window.
     if i==2:
         sleep=Tk()
+        sleep.title("Sleep Suggestions")
     
