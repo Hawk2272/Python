@@ -19,9 +19,22 @@ def alarm(set_alarm_timer):
             print("\nTime to Wake up. The time is:",now)
             winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
             break   
+def sleep_suggestion(set_alarm_timer,set_alarm_timer1):
+    set_alarm_timer=datetime.datetime.strptime(set_alarm_timer,"%H:%M:%S")
+    set_alarm_timer1=datetime.datetime.strptime(set_alarm_timer1,"%H:%M:%S")
+    diff=set_alarm_timer1-set_alarm_timer
+    diff=str(diff)
+    (h,m,s)=diff.split(':')
+    diff1=h+" hours"+" "+m+" mins"+" "+s+" secs"
+    print("\nTime slept for:",diff1)
+    diff_int= int(h) * 3600 + int(m) * 60 + int(s)
+
 def actual_time():
     set_alarm_timer = f"{hour.get()}:{min.get()}:{sec.get()}"
     alarm(set_alarm_timer)
+
+def actual_time1():
+    pass
 
 while True:
     print("\tMain menu:")
@@ -50,6 +63,7 @@ while True:
     if i==2:
         sleep=Tk()
         sleep.iconbitmap(r'C:\Users\user\Downloads\Snore-01-512.ico')
+        sleep.title("Sleep suggestions")
         sleep.geometry("400x200")
         time_format=Label(sleep, text= "Enter time in 24 hour format!", fg="SeaGreen1",bg="black",font="Calibri").place(x=60,y=120)
         ddTime = Label(sleep,text = "Hour  Min   Sec",font=60).place(x = 155)
