@@ -49,6 +49,28 @@ while True:
         clock.mainloop()
     if i==2:
         sleep=Tk()
-        sleep.iconbitmap(r'C:\Users\user\Downloads\alarm.ico')
+        sleep.iconbitmap(r'C:\Users\user\Downloads\Snore-01-512.ico')
         sleep.geometry("400x200")
+        time_format=Label(sleep, text= "Enter time in 24 hour format!", fg="SeaGreen1",bg="black",font="Calibri").place(x=60,y=120)
+        ddTime = Label(sleep,text = "Hour  Min   Sec",font=60).place(x = 155)
+        setYourAlarm = Label(sleep,text = "When did you sleep?",fg="blue",relief = "solid",font=("Times New Roman",8,"bold")).place(x=10, y=29)
+        setYourAlarm = Label(sleep,text = "When did you wake up?",fg="blue",relief = "solid",font=("Times New Roman",8,"bold")).place(x=10, y=50)
+        # The Variables we require to set the alarm(initialization):
+        hour = StringVar()
+        min = StringVar()
+        sec = StringVar()
+        hour1= StringVar()
+        min1= StringVar()
+        sec1= StringVar()
+        #Time required to set the alarm sleep:
+        hourTime= Entry(sleep,textvariable = hour,bg = "pink",width = 15).place(x=150,y=30)
+        minTime= Entry(sleep,textvariable = min,bg = "pink",width = 15).place(x=200,y=30)
+        secTime = Entry(sleep,textvariable = sec,bg = "pink",width = 15).place(x=250,y=30)
+        hourTime2= Entry(sleep,textvariable = hour1,bg = "pink",width = 15).place(x=150,y=50)
+        minTime2= Entry(sleep,textvariable = min1,bg = "pink",width = 15).place(x=200,y=50)
+        secTime2= Entry(sleep,textvariable = sec1,bg = "pink",width = 15).place(x=250,y=50)
+        submit = Button(sleep,text = "Check suggestions",fg="red",width = 20,command = actual_time1).place(x =120,y=80)
+        sleep.mainloop()
+    elif i==3:
+        break
     
