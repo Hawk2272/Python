@@ -28,6 +28,25 @@ def sleep_suggestion(set_alarm_timer,set_alarm_timer1):
     diff1=h+" hours"+" "+m+" mins"+" "+s+" secs"
     print("\nTime slept for:",diff1)
     diff_int= int(h) * 3600 + int(m) * 60 + int(s)
+    if diff_int>32400:
+        print("\nYou are sleeping too much!!!. To avoid this:")
+        print("1. Change your alarm habits and resist hitting the snooze button")
+        print("2. Dodge the urge to take a nap in the afternoons")
+        print("3. Avoid blue light before bed\n")
+    elif diff_int>=25200 and diff_int<=32400:
+        print("\nYou have slept sufficiently\n")
+    elif diff_int<25200 and diff_int>18000:
+        print("\nYou haven't slept enough.Tips to get better sleep:")
+        print("1. Stick to a sleep schedule")
+        print("2. Limit Daytime naps")
+        print("3. Include physical activity in your daily routine")
+    elif diff_int<=18000:
+        print("You are getting an extremely less amount of sleep!!!!!\n")
+        print("To avoid this:")
+        print("1. Don't take naps after 3 p.m, and don't nap longer than 20 minutes.")
+        print("2. Stay away from caffeine and alcohol late in the day.")
+        print("3. Get regular exercise, but not within 2-3 hours of bedtime.\n")    
+
 
 def actual_time():
     set_alarm_timer = f"{hour.get()}:{min.get()}:{sec.get()}"
@@ -87,4 +106,3 @@ while True:
         sleep.mainloop()
     elif i==3:
         break
-    
