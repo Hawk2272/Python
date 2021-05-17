@@ -41,7 +41,7 @@ def sleep_suggestion(set_alarm_timer,set_alarm_timer1):
         print("2. Limit Daytime naps")
         print("3. Include physical activity in your daily routine\n")
     elif diff_int<=18000:
-        print("\nYou are getting an extremely less amount of sleep!!!!!")
+        print("\nYou are getting an extremely less amount of sleep!!!!!\n")
         print("To avoid this:")
         print("1. Don't take naps after 3 p.m, and don't nap longer than 20 minutes.")
         print("2. Stay away from caffeine and alcohol late in the day.")
