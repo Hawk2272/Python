@@ -39,9 +39,9 @@ def sleep_suggestion(set_alarm_timer,set_alarm_timer1):
         print("\nYou haven't slept enough.Tips to get better sleep:")
         print("1. Stick to a sleep schedule")
         print("2. Limit Daytime naps")
-        print("3. Include physical activity in your daily routine")
+        print("3. Include physical activity in your daily routine\n")
     elif diff_int<=18000:
-        print("You are getting an extremely less amount of sleep!!!!!\n")
+        print("\nYou are getting an extremely less amount of sleep!!!!!")
         print("To avoid this:")
         print("1. Don't take naps after 3 p.m, and don't nap longer than 20 minutes.")
         print("2. Stay away from caffeine and alcohol late in the day.")
@@ -53,11 +53,13 @@ def actual_time():
     alarm(set_alarm_timer)
 
 def actual_time1():
-    pass
+    set_alarm_timer = f"{hour.get()}:{min.get()}:{sec.get()}"
+    set_alarm_timer1=f"{hour1.get()}:{min1.get()}:{sec1.get()}"
+    sleep_suggestion(set_alarm_timer,set_alarm_timer1)
 
 while True:
     print("\tMain menu:")
-    print("\t1. Alarm Sleep")
+    print("\t1. Alarm Clock")
     print("\t2. Sleep suggestions")
     print("\t3. Exit")
     i=int(input("Enter your option:"))
