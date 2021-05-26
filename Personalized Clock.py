@@ -8,10 +8,9 @@ def alarm(set_alarm_timer):
     current_time = datetime.datetime.now()
     now = current_time.strftime("%H:%M:%S")
     date = current_time.strftime("%d/%m/%Y")
-    print("The Set Date is:",date)
+    print("\nThe Set Date is:",date)
     print(now)
     while True:
-        time.sleep(1)
         current_time = datetime.datetime.now()
         now =current_time.strftime("%H:%M:%S")
         date =current_time.strftime("%d/%m/%Y")
@@ -29,14 +28,16 @@ def sleep_suggestion(set_alarm_timer,set_alarm_timer1):
     print("\nTime slept for:",diff1)
     diff_int= int(h) * 3600 + int(m) * 60 + int(s)
     if diff_int>32400:
-        print("\nYou are sleeping too much!!!. To avoid this:")
+        print("\nYou are sleeping too much!!!.")
+        print("To avoid this:")
         print("1. Change your alarm habits and resist hitting the snooze button")
         print("2. Dodge the urge to take a nap in the afternoons")
         print("3. Avoid blue light before bed\n")
     elif diff_int>=25200 and diff_int<=32400:
         print("\nYou have slept sufficiently\n")
     elif diff_int<25200 and diff_int>18000:
-        print("\nYou haven't slept enough.Tips to get better sleep:")
+        print("\nYou haven't slept enough.")
+        print("Tips to get better sleep:")
         print("1. Stick to a sleep schedule")
         print("2. Limit Daytime naps")
         print("3. Include physical activity in your daily routine\n")
@@ -66,7 +67,7 @@ while True:
     if i==1:
         clock= Tk()
         clock.iconbitmap(r'C:\Users\user\Downloads\alarm.ico')
-        clock.title("Alarm Sleep")
+        clock.title("Alarm Clock")
         clock.geometry("400x200")
         time_format=Label(clock, text= "Enter time in 24 hour format!", fg="cyan",bg="black",font="Calibri").place(x=60,y=120)
         addTime = Label(clock,text = "Hour  Min   Sec",font=60).place(x = 130)
@@ -107,4 +108,6 @@ while True:
         submit = Button(sleep,text = "Check suggestions",fg="red",width = 20,command = actual_time1).place(x =120,y=80)
         sleep.mainloop()
     elif i==3:
+        print("\nThank you for using our system.")
+        print("Done by Gaurav, Kaushik and Vinod")
         break
