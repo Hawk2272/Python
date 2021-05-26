@@ -16,7 +16,7 @@ def alarm(set_alarm_timer):
         date =current_time.strftime("%d/%m/%Y")
         if now==set_alarm_timer:
             print("\nTime to Wake up. The time is:",now)
-            winsound.Play("sound.wavSound",winsound.SND_ASYNC)
+            winsound.PlaySound("sound.wav",winsound.SND_ASYNC)
             break   
 def sleep_suggestion(set_alarm_timer,set_alarm_timer1):
     set_alarm_timer=datetime.datetime.strptime(set_alarm_timer,"%H:%M:%S")
